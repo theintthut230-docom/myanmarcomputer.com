@@ -66,7 +66,7 @@ graph TD
 ## 3. Design System & Visual Guidelines
 
 ### 3.1 Design Principles
-* **Trust & Modernity:** Combine corporate stability with cutting-edge tech aesthetics (clean glassmorphism accents, crisp line icons, balanced white space).
+* **Rooted Modernity:** Pair dependable evergreen tones with warm parchment, lacquer-red action accents, and restrained saffron details. Use connectivity-inspired linework rather than generic neon effects.
 * **High Legibility for Bilingual Text:** Explicit hierarchy tailored to accommodate Myanmar script metrics (line heights, diacritic accents) alongside Latin typography.
 * **Performance-First & Data-Conscious:** Optimized for low-bandwidth scenarios common across local mobile connections, with lazy loading, SVG vector iconography, and lightweight CSS.
 * **Warmth & Accessibility:** High contrast ratios (WCAG 2.1 AA compliant) ensuring comfort for students of all age groups and skill levels.
@@ -74,23 +74,23 @@ graph TD
 ### 3.2 Color System
 
 ```
-Primary: Tech Navy (#0B2545)          Primary Accent: Electric Cyan (#007AFF)
-Secondary: Deep Teal (#134074)        Success/Growth: Emerald Green (#10B981)
-Highlight: Myanmar Amber (#F59E0B)    Neutral Dark: Charcoal Slate (#0F172A)
-Neutral Light: Pure Ice (#F8FAFC)     Surface Background: Pure White (#FFFFFF)
+Primary: Evergreen (#17463D)          Secondary: River Teal (#236358)
+Action: Lacquer Red (#B84F36)         Highlight: Muted Saffron (#D8A447)
+Growth: Forest Green (#2F775C)        Neutral Dark: Deep Evergreen (#10241F)
+Neutral Light: Parchment (#F7F4EC)    Surface: Warm White (#FFFCF6)
 ```
 
 | Token Name | Hex Code | Role & Usage |
 | :--- | :--- | :--- |
-| `--color-primary-navy` | `#0B2545` | Main brand color; header navigation, primary headers, authoritative sections. |
-| `--color-primary-blue` | `#134074` | Secondary brand surface, active states, cards, hero gradients. |
-| `--color-accent-cyan` | `#007AFF` | Primary interactive buttons, links, active tabs, highlights. |
-| `--color-accent-amber` | `#F59E0B` | Badges ("Featured", "New Batch", "Enrollment Open"), alert highlights. |
-| `--color-success-green` | `#10B981` | Verification checkmarks, course completion indicators, availability tags. |
-| `--color-slate-900` | `#0F172A` | Core body typography on light backgrounds. |
-| `--color-slate-600` | `#475569` | Secondary text, subtitles, metadata, breadcrumbs. |
-| `--color-slate-100` | `#F1F5F9` | Alternate section background, card border strokes, table striping. |
-| `--color-background` | `#FFFFFF` | Core page canvas background. |
+| `--color-primary-navy` | `#17463D` | Evergreen brand anchor for headings, navigation marks, and primary surfaces. |
+| `--color-primary-blue` | `#236358` | River-teal secondary surface for active states, icons, and gradients. |
+| `--color-accent-cyan` | `#B84F36` | Lacquer-red calls to action, links, and key interactive states. |
+| `--color-accent-amber` | `#D8A447` | Muted saffron details for highlights, badges, and enrollment notices. |
+| `--color-success-green` | `#2F775C` | Verification marks, completion indicators, and availability tags. |
+| `--color-slate-900` | `#1A2E29` | Core body typography on light backgrounds. |
+| `--color-slate-600` | `#555E55` | Secondary text, subtitles, metadata, and breadcrumbs. |
+| `--color-slate-100` | `#EFEADF` | Alternate section background, card borders, and dividers. |
+| `--color-background` | `#F7F4EC` | Warm parchment page canvas; use warm white for cards and elevated surfaces. |
 
 ### 3.3 Typography Hierarchy
 
@@ -140,7 +140,7 @@ Neutral Light: Pure Ice (#F8FAFC)     Surface Background: Pure White (#FFFFFF)
   * Navigation Links: Courses | Solutions | Infrastructure | Directory | Events | About
   * Action Buttons:
     * Secondary Outline Button: "Check Schedule"
-    * Primary Filled Button: "Apply Now" (Cyan fill)
+    * Primary Filled Button: "Apply Now" (Lacquer-red fill)
 
 ### 4.2 Homepage (`/`) Wireframe Structure
 
