@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myanmar Computer | Technology for Tomorrow</title>
+  <meta name="description"
+    content="Myanmar Computer (Myanmar Computer Co., Ltd.) - Empowering Myanmar through practical IT training, professional web development, high-speed hosting, and enterprise technology infrastructure.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Padauk:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ======================================================================
+       1. Top Announcement & Utility Bar
+       ====================================================================== -->
+  <aside class="top-bar" aria-label="Announcement & Utility Bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+      </div>
+      <div class="top-bar-right">
+        <!-- Bilingual Language Switcher -->
+        <div class="lang-switcher" role="group" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="my">မြန်မာ</button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       2. Main Navigation Header
+       ====================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Myanmar Computer Home">
+        <div class="logo-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+          </svg>
+        </div>
+        <div class="logo-text-wrap">
+          <span class="logo-brand-name">Myanmar Computer</span>
+          <span class="logo-brand-sub" data-i18n="brand_sub">Technology for Tomorrow</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero" class="nav-link active" data-i18n="nav_home">Home</a></li>
+          <li><a href="#pillars" class="nav-link" data-i18n="nav_pillars">Offerings</a></li>
+          <li><a href="#courses" class="nav-link" data-i18n="nav_courses">IT Academy</a></li>
+          <li><a href="#solutions" class="nav-link" data-i18n="nav_solutions">Web & Cloud</a></li>
+          <li><a href="#infrastructure" class="nav-link" data-i18n="nav_infra">Infrastructure</a></li>
+          <li><a href="#directory" class="nav-link" data-i18n="nav_directory">Centres</a></li>
+          <li><a href="#events" class="nav-link" data-i18n="nav_events">Events</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Mobile Language switch duplicate for compact headers -->
+        <div class="lang-switcher" style="display: none;" id="mobileLangSwitcher">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="my">MM</button>
+        </div>
+        <button class="btn btn-primary btn-sm btn-header-cta" onclick="openEnrollModal('web-dev-pro')"
+          data-i18n="nav_apply">
+          Enroll Now
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ====================================================================
+         3. Hero Section
+         ==================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <span class="hero-badge">
+              <span class="ping-dot"></span>
+              <span data-i18n="hero_badge">Empowering Myanmar's Digital Workforce</span>
+            </span>
+          </div>
+          <h1 class="hero-title">
+            <span data-i18n="hero_title_lead">Empowering Myanmar Through</span><br>
+            <span class="gradient-text" data-i18n="hero_title_accent">Technology & Education</span>
+          </h1>
+          <p class="hero-subtitle" data-i18n="hero_desc">
+            Myanmar Computer provides industry-standard IT training, professional web development, high-speed hosting,
+            and enterprise IT infrastructure across Yangon, Mandalay, and nationwide.
+          </p>
+          <div class="hero-ctas">
+            <a href="#courses" class="btn btn-primary btn-lg" data-i18n="hero_cta_courses">Explore IT Courses</a>
+            <a href="#solutions" class="btn btn-secondary btn-lg" data-i18n="hero_cta_quote">Get Web Solutions</a>
+          </div>
+
+          <!-- Hero Metrics -->
+          <div class="hero-stats-bar">
+            <div class="stat-item">
+              <span class="stat-num" data-i18n="stat_students">15,000+</span>
+              <span class="stat-label" data-i18n="stat_students_lbl">Certified Graduates</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-i18n="stat_partners">500+</span>
+              <span class="stat-label" data-i18n="stat_partners_lbl">Corporate Clients</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-i18n="stat_years">25+ Years</span>
+              <span class="stat-label" data-i18n="stat_years_lbl">Technology Leadership</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Showcase Card -->
+        <div class="hero-card-showcase">
+          <div class="hero-glass-card">
+            <div class="glass-card-header">
+              <div class="hub-status">
+                <span class="status-dot"></span>
+                <span data-i18n="hub_status">Active Innovation Hub</span>
+              </div>
+              <span class="badge badge-amber">MICT Park HQ</span>
+            </div>
+
+            <div class="glass-features">
+              <div class="glass-feature-row">
+                <div class="feature-icon-box icon-blue">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                  </svg>
+                </div>
+                <div class="feature-info">
+                  <h4 data-i18n="feat_lab_title">State-of-the-art Labs</h4>
+                  <p data-i18n="feat_lab_desc">High-spec workstations with fiber broadband</p>
+                </div>
+              </div>
+
+              <div class="glass-feature-row">
+                <div class="feature-icon-box icon-amber">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <div class="feature-info">
+                  <h4 data-i18n="feat_cloud_title">Enterprise Web Services</h4>
+                  <p data-i18n="feat_cloud_desc">Custom web development & 99.9% uptime hosting</p>
+                </div>
+              </div>
+
+              <div class="glass-feature-row">
+                <div class="feature-icon-box icon-green">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                    </path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                  </svg>
+                </div>
+                <div class="feature-info">
+                  <h4 data-i18n="feat_park_title">MICT Park Strategic Hub</h4>
+                  <p data-i18n="feat_park_desc">Central partner in Yangon & Mandalay ICT zones</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. Three Core Pillars of Service
+         ==================================================================== -->
+    <section class="pillars-section" id="pillars">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" data-i18n="pillars_sub">Core Specializations</span>
+          <h2 class="section-title" data-i18n="pillars_title">Comprehensive Technology Solutions</h2>
+          <p class="section-desc" data-i18n="pillars_desc">
+            Built to support digital infrastructure, IT education, and web technology throughout Myanmar.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Pillar 1: Education -->
+          <div class="pillar-card">
+            <div class="pillar-icon-wrap">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <h3 class="pillar-title" data-i18n="pillar1_title">IT Education & Training</h3>
+            <p class="pillar-desc" data-i18n="pillar1_desc">
+              Hands-on, career-focused courses taught by certified instructors in state-of-the-art computer labs.
+            </p>
+            <ul class="pillar-bullets">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="pillar1_b1">Practical training from basic literacy to advanced coding</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="pillar1_b2">Hands-on Cisco networking & server administration</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="pillar1_b3">Tailored workforce upskilling for corporate teams</span>
+              </li>
+            </ul>
+            <a href="#courses" class="btn btn-outline btn-sm">Explore Academy →</a>
+          </div>
+
+          <!-- Pillar 2: Web & Digital -->
+          <div class="pillar-card">
+            <div class="pillar-icon-wrap" style="background: #FEF3C7; color: #D97706;">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="pillar-title" data-i18n="pillar2_title">Web & Digital Solutions</h3>
+            <p class="pillar-desc" data-i18n="pillar2_desc">
+              End-to-end digital experiences designed to help Myanmar enterprises and SMEs establish modern digital
+              footprints.
+            </p>
+            <ul class="pillar-bullets">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="pillar2_b1">Custom responsive websites & web applications</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="pillar2_b2">Reliable domain management & high-speed cloud hosting</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="pillar2_b3">Monthly maintenance, security patches & SLA support</span>
+              </li>
+            </ul>
+            <a href="#solutions" class="btn btn-outline btn-sm">Estimate Cost →</a>
+          </div>
+
+          <!-- Pillar 3: Technology Infrastructure -->
+          <div class="pillar-card">
+            <div class="pillar-icon-wrap" style="background: #D1FAE5; color: #059669;">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="pillar-title" data-i18n="pillar3_title">Technology Infrastructure</h3>
+            <p class="pillar-desc" data-i18n="pillar3_desc">
+              Hardware sales, turnkey cyber café installations, and national ICT park collaborative initiatives.
+            </p>
+            <ul class="pillar-bullets">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="pillar3_b1">Turnkey cyber café workstation & networking setups</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="pillar3_b2">Commercial hardware sales & IT maintenance contracts</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="pillar3_b3">Strategic collaboration with Yangon & Mandalay ICT parks</span>
+              </li>
+            </ul>
+            <a href="#infrastructure" class="btn btn-outline btn-sm">View Infrastructure →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. IT Education & Courses Section
+         ==================================================================== -->
+    <section class="courses-section" id="courses">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" data-i18n="courses_sub">IT Academy Catalog</span>
+          <h2 class="section-title" data-i18n="courses_title">Industry-Ready Computer Training</h2>
+          <p class="section-desc" data-i18n="courses_desc">
+            Choose from certified courses designed to prepare students for the modern technological landscape.
+          </p>
+        </div>
+
+        <!-- Controls: Filters & Real-time Search -->
+        <div class="courses-controls">
+          <div class="filter-pills" role="tablist">
+            <button class="filter-btn active" data-category="all" data-i18n="filter_all">All Courses</button>
+            <button class="filter-btn" data-category="web" data-i18n="filter_web">Web Development</button>
+            <button class="filter-btn" data-category="networking" data-i18n="filter_networking">Networking &
+              Infra</button>
+            <button class="filter-btn" data-category="basic" data-i18n="filter_basic">Basic & Office</button>
+            <button class="filter-btn" data-category="corporate" data-i18n="filter_corporate">Corporate
+              Training</button>
+          </div>
+
+          <div class="courses-search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="courseSearchInput" placeholder="Search course by keyword...">
+          </div>
+        </div>
+
+        <!-- Dynamic Course Grid -->
+        <div class="courses-grid" id="coursesGrid">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. Web Development & Interactive Cost Estimator
+         ==================================================================== -->
+    <section class="services-section" id="solutions">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" data-i18n="calc_sub">Instant Quote Estimator</span>
+          <h2 class="section-title" data-i18n="calc_title">Plan Your Web & Hosting Solution</h2>
+          <p class="section-desc" data-i18n="calc_desc">
+            Select your project specifications below to calculate an upfront estimate for web development and hosting.
+          </p>
+        </div>
+
+        <!-- Interactive Calculator Widget -->
+        <div class="calculator-wrapper">
+          <div class="calc-grid">
+            <div class="calc-form-side">
+              <!-- Step 1: Project Type -->
+              <div class="calc-step">
+                <span class="calc-step-label" data-i18n="calc_step1">1. Select Project Type</span>
+                <div class="calc-options-grid">
+                  <div class="calc-radio-card active" data-project-cost="650000"
+                    data-title-en="Corporate Website (5-10 Pages)"
+                    data-title-my="ကုမ္ပဏီ မိတ်ဆက် ဝဘ်ဆိုက် (၅-၁၀ မျက်နှာ)">
+                    <div class="calc-opt-info">
+                      <h5 data-i18n="calc_opt_corp">Corporate Website</h5>
+                      <span data-i18n="calc_opt_corp_sub">5-10 Pages, Responsive, CMS</span>
+                    </div>
+                  </div>
+
+                  <div class="calc-radio-card" data-project-cost="1100000" data-title-en="E-Commerce Store"
+                    data-title-my="အွန်လိုင်း အရောင်းဆိုင် (E-Commerce)">
+                    <div class="calc-opt-info">
+                      <h5 data-i18n="calc_opt_ecom">E-Commerce Store</h5>
+                      <span data-i18n="calc_opt_ecom_sub">Payment gateway, Product catalog</span>
+                    </div>
+                  </div>
+
+                  <div class="calc-radio-card" data-project-cost="1850000" data-title-en="Custom Web Application"
+                    data-title-my="စိတ်ကြိုက် Web Application">
+                    <div class="calc-opt-info">
+                      <h5 data-i18n="calc_opt_app">Custom Web Application</h5>
+                      <span data-i18n="calc_opt_app_sub">Complex workflows, APIs, Portals</span>
+                    </div>
+                  </div>
+
+                  <div class="calc-radio-card" data-project-cost="350000" data-title-en="Starter Business Landing"
+                    data-title-my="လုပ်ငန်းသုံး မိတ်ဆက် စာမျက်နှာ">
+                    <div class="calc-opt-info">
+                      <h5 data-i18n="calc_opt_basic">Starter Business Landing</h5>
+                      <span data-i18n="calc_opt_basic_sub">1-3 Pages, Lead Generation</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 2: Hosting -->
+              <div class="calc-step">
+                <span class="calc-step-label" data-i18n="calc_step2">2. Select Hosting & Infrastructure Tier</span>
+                <div class="calc-options-grid">
+                  <div class="calc-radio-card" data-hosting-cost="80000" data-title-en="Cloud Starter (Shared)"
+                    data-title-my="Cloud Starter (အခြေခံ သုံးစွဲသူများ)">
+                    <div class="calc-opt-info">
+                      <h5 data-i18n="calc_host_starter">Cloud Starter (Shared)</h5>
+                      <span>10GB SSD / Free SSL / 50GB Bandwidth</span>
+                    </div>
+                  </div>
+
+                  <div class="calc-radio-card active" data-hosting-cost="150000"
+                    data-title-en="Business Pro (SSD + SSL)" data-title-my="Business Pro (SSD + အခမဲ့ SSL)">
+                    <div class="calc-opt-info">
+                      <h5 data-i18n="calc_host_biz">Business Pro (SSD + SSL)</h5>
+                      <span>50GB SSD / Daily Backup / Unlimited Traffic</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 3: Add-ons -->
+              <div class="calc-step">
+                <span class="calc-step-label" data-i18n="calc_step3">3. Optional Add-ons & Maintenance</span>
+                <div class="calc-addons-list">
+                  <div class="calc-checkbox-card active" data-addon-key="domain">
+                    <div class="calc-check-left">
+                      <input type="checkbox" checked>
+                      <span data-i18n="calc_addon_domain">Domain (.com / .com.mm Registration)</span>
+                    </div>
+                    <span>+70,000 MMK / yr</span>
+                  </div>
+
+                  <div class="calc-checkbox-card active" data-addon-key="sla">
+                    <div class="calc-check-left">
+                      <input type="checkbox" checked>
+                      <span data-i18n="calc_addon_sla">Annual Maintenance & Security SLA</span>
+                    </div>
+                    <span>+180,000 MMK / yr</span>
+                  </div>
+
+                  <div class="calc-checkbox-card" data-addon-key="seo">
+                    <div class="calc-check-left">
+                      <input type="checkbox">
+                      <span data-i18n="calc_addon_seo">Speed Optimization & Local SEO Pack</span>
+                    </div>
+                    <span>+90,000 MMK</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Summary Column -->
+            <div class="calc-summary-side">
+              <div class="calc-summary-card">
+                <h4 data-i18n="calc_est_title">Estimated Investment</h4>
+                <div class="calc-price-big" id="calcGrandTotal">1,050,000 MMK</div>
+                <div class="calc-price-sub" id="calcUsdSub">Approx. ~$300 USD (Flexible Milestone Payments)</div>
+
+                <div class="calc-breakdown">
+                  <div class="calc-breakdown-row">
+                    <span data-i18n="calc_row_project">Project Scope:</span>
+                    <strong id="calcSummaryProject">Corporate Website (5-10 Pages)</strong>
+                  </div>
+                  <div class="calc-breakdown-row">
+                    <span data-i18n="calc_row_hosting">Cloud Hosting:</span>
+                    <strong id="calcSummaryHosting">Business Pro (SSD + SSL)</strong>
+                  </div>
+                  <div class="calc-breakdown-row">
+                    <span data-i18n="calc_row_addons">Add-ons:</span>
+                    <strong id="calcSummaryAddons">Domain, Annual SLA</strong>
+                  </div>
+                </div>
+
+                <button class="btn btn-primary btn-lg" style="width: 100%;" onclick="openQuoteProposalModal()"
+                  data-i18n="btn_request_quote">
+                  Request Official Proposal
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         7. Technology Infrastructure & ICT Park Collaborations
+         ==================================================================== -->
+    <section class="infra-section" id="infrastructure">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" data-i18n="infra_sub">Infrastructure & Parks</span>
+          <h2 class="section-title" data-i18n="infra_title">Powering Myanmar's Digital Backbone</h2>
+          <p class="section-desc" data-i18n="infra_desc">
+            From enterprise hardware fleets to nationwide ICT park partnerships, Myanmar Computer keeps your business
+            connected.
+          </p>
+        </div>
+
+        <div class="infra-grid">
+          <!-- Hardware Card -->
+          <div class="infra-card">
+            <div class="infra-icon icon-navy">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 data-i18n="infra_card1_title">Hardware Sales & Fleet Supply</h3>
+            <p data-i18n="infra_card1_desc">
+              High-performance desktop workstations, rack servers, enterprise routers, and UPS systems with local
+              manufacturer warranties.
+            </p>
+            <ul class="infra-specs">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Dell, HP & Lenovo Authorized Fleet Deals</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Server Rack Assemblies & Cable Management</li>
+            </ul>
+          </div>
+
+          <!-- Cyber Cafe Card -->
+          <div class="infra-card">
+            <div class="infra-icon icon-teal">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+              </svg>
+            </div>
+            <h3 data-i18n="infra_card2_title">Cyber Café Setup & Solutions</h3>
+            <p data-i18n="infra_card2_desc">
+              Complete turnkey deployment: gigabit network cabling, workstation imaging, billing software, and bandwidth
+              balancing.
+            </p>
+            <ul class="infra-specs">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Automated Billing & Time-accounting Software</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Multi-WAN Load Balancing Routers</li>
+            </ul>
+          </div>
+
+          <!-- AMC Card -->
+          <div class="infra-card">
+            <div class="infra-icon icon-blue">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                </path>
+              </svg>
+            </div>
+            <h3 data-i18n="infra_card3_title">Enterprise IT Maintenance (AMC)</h3>
+            <p data-i18n="infra_card3_desc">
+              On-site and remote IT support contracts for corporate offices, schools, and computer laboratories with
+              guaranteed SLAs.
+            </p>
+            <ul class="infra-specs">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Scheduled Preventive Health Checks</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Emergency On-site Response within 4 Hours</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ICT Park Partnership Banner -->
+        <div class="park-banner">
+          <div>
+            <span class="badge badge-amber" style="margin-bottom: 12px;">Strategic Ecosystem</span>
+            <h3 data-i18n="park_title">National ICT Park Collaborations</h3>
+            <p data-i18n="park_desc">
+              Myanmar Computer operates in direct collaboration with major technology parks, driving digital literacy
+              and enterprise tech incubation.
+            </p>
+          </div>
+          <div class="park-locations-badge">
+            <div class="park-loc-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <div>
+                <strong data-i18n="park_loc1_title">MICT Park Yangon (HQ Hub)</strong>
+                <span data-i18n="park_loc1_desc">Main training labs & corporate solutions center in Hlaing
+                  Township</span>
+              </div>
+            </div>
+            <div class="park-loc-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <div>
+                <strong data-i18n="park_loc2_title">Mandalay ICT Park Development</strong>
+                <span data-i18n="park_loc2_desc">Regional support & tech training center for Upper Myanmar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         8. Directory of Affiliated Computer Centres
+         ==================================================================== -->
+    <section class="directory-section" id="directory">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" data-i18n="dir_sub">Nationwide Network</span>
+          <h2 class="section-title" data-i18n="dir_title">Affiliated Computer Centres & Branches</h2>
+          <p class="section-desc" data-i18n="dir_desc">
+            Locate a verified Myanmar Computer training centre or branch in your division or township.
+          </p>
+        </div>
+
+        <!-- Region Selector -->
+        <div class="directory-controls">
+          <div class="directory-regions">
+            <button class="region-btn active" data-region="all" data-i18n="region_all">All Regions</button>
+            <button class="region-btn" data-region="yangon" data-i18n="region_yangon">Yangon</button>
+            <button class="region-btn" data-region="mandalay" data-i18n="region_mandalay">Mandalay</button>
+            <button class="region-btn" data-region="naypyidaw" data-i18n="region_naypyidaw">Naypyidaw</button>
+            <button class="region-btn" data-region="bago" data-i18n="region_bago">Bago</button>
+            <button class="region-btn" data-region="mawlamyine" data-i18n="region_mawlamyine">Mawlamyine</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Grid of Centres -->
+        <div class="directory-grid" id="directoryGrid">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         9. Exhibitions & ICT Events
+         ==================================================================== -->
+    <section class="events-section" id="events">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" data-i18n="events_sub">Community & Exhibitions</span>
+          <h2 class="section-title" data-i18n="events_title">Upcoming ICT Exhibitions & Seminars</h2>
+          <p class="section-desc" data-i18n="events_desc">
+            Join our hands-on workshops, career expos, and national technology showcases.
+          </p>
+        </div>
+
+        <div class="events-grid" id="eventsGrid">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       11. Site Footer
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="logo-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <span class="logo-brand-name">Myanmar Computer</span>
+          </div>
+          <p data-i18n="footer_desc">
+            Myanmar Computer Co., Ltd. - Driving IT education, modern web technologies, and reliable digital
+            infrastructure across the nation.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footer_quick_links">Quick Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#pillars">About Organization</a></li>
+            <li><a href="#courses">IT Academy Courses</a></li>
+            <li><a href="#directory">Centres Directory</a></li>
+            <li><a href="#events">Events & Exhibitions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footer_courses">Academy Courses</h5>
+          <ul class="footer-links">
+            <li><a href="#courses" onclick="document.querySelector('.filter-btn[data-category=\'web\']').click()">Web
+                Development Pro</a></li>
+            <li><a href="#courses"
+                onclick="document.querySelector('.filter-btn[data-category=\'networking\']').click()">Cisco Networking
+                Admin</a></li>
+            <li><a href="#courses"
+                onclick="document.querySelector('.filter-btn[data-category=\'basic\']').click()">Office IT
+                Productivity</a></li>
+            <li><a href="#courses"
+                onclick="document.querySelector('.filter-btn[data-category=\'corporate\']').click()">Corporate
+                Workforce</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footer_services">Business Services</h5>
+          <ul class="footer-links">
+            <li><a href="#solutions">Custom Web Design</a></li>
+            <li><a href="#solutions">Cloud Hosting & SLA</a></li>
+            <li><a href="#infrastructure">Hardware Procurement</a></li>
+            <li><a href="#infrastructure">Cyber Café Turnkey Setup</a></li>
+            <li><a href="#infrastructure">MICT Park Collabs</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer_copy">
+          © 2026 Myanmar Computer Co., Ltd. All rights reserved. Technology for Tomorrow.
+        </p>
+        <p>Developed By Theint Theint Thu (21.10.2026)</p>
+        <div>
+          <span>Website: <code>myanmarcomputer.com</code></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       12. Modals (Enrollment, Event Registration, Quote Proposal)
+       ====================================================================== -->
+  <!-- Enrollment Modal -->
+  <div class="modal-backdrop" id="enrollModal" role="dialog" aria-modal="true" aria-labelledby="enrollTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="enrollTitle">IT Academy Course Enrollment</h3>
+        <button class="modal-close-btn" aria-label="Close modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="enrollForm">
+          <div class="form-group">
+            <label for="enrollCourseSelect">Selected Course Program</label>
+            <select id="enrollCourseSelect" class="form-control" required></select>
+          </div>
+          <div class="form-group">
+            <label for="enrollName">Student Full Name</label>
+            <input type="text" id="enrollName" class="form-control" placeholder="Ko / Ma ..." required>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+            <div class="form-group">
+              <label for="enrollPhone">Phone Number</label>
+              <input type="tel" id="enrollPhone" class="form-control" placeholder="09xxxxxxxxx" required>
+            </div>
+            <div class="form-group">
+              <label for="enrollEmail">Email Address</label>
+              <input type="email" id="enrollEmail" class="form-control" placeholder="student@gmail.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="enrollCampus">Preferred Training Campus</label>
+            <select id="enrollCampus" class="form-control">
+              <option value="mict">Yangon MICT Park Campus</option>
+              <option value="downtown">Yangon Downtown Central</option>
+              <option value="mandalay">Mandalay ICT Park Centre</option>
+              <option value="online">Online / Hybrid Batch</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 10px;">
+            Submit Application
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Event Registration Modal -->
+  <div class="modal-backdrop" id="eventModal" role="dialog" aria-modal="true" aria-labelledby="eventModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="eventModalTitle">Event Registration</h3>
+        <button class="modal-close-btn" aria-label="Close modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="eventForm">
+          <input type="hidden" id="eventModalIdInput">
+          <div class="form-group">
+            <label for="eventAttendeeName">Attendee Full Name</label>
+            <input type="text" id="eventAttendeeName" class="form-control" placeholder="Your name" required>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+            <div class="form-group">
+              <label for="eventAttendeePhone">Phone</label>
+              <input type="tel" id="eventAttendeePhone" class="form-control" placeholder="09xxxxxxxxx" required>
+            </div>
+            <div class="form-group">
+              <label for="eventAttendeeEmail">Email</label>
+              <input type="email" id="eventAttendeeEmail" class="form-control" placeholder="name@domain.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="eventOrg">Company or School (Optional)</label>
+            <input type="text" id="eventOrg" class="form-control" placeholder="e.g. University / Tech SME">
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 10px;">
+            Confirm Free Registration
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quote Proposal Modal -->
+  <div class="modal-backdrop" id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="quoteModalTitle">Request Official Web & Hosting Proposal</h3>
+        <button class="modal-close-btn" aria-label="Close modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="quoteModalSummary"></div>
+        <form id="quoteProposalForm">
+          <div class="form-group">
+            <label for="qpName">Contact Person Name</label>
+            <input type="text" id="qpName" class="form-control" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="qpCompany">Company / Organization Name</label>
+            <input type="text" id="qpCompany" class="form-control" placeholder="e.g. Golden Star Co., Ltd." required>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+            <div class="form-group">
+              <label for="qpPhone">Phone</label>
+              <input type="tel" id="qpPhone" class="form-control" placeholder="09xxxxxxxxx" required>
+            </div>
+            <div class="form-group">
+              <label for="qpEmail">Work Email</label>
+              <input type="email" id="qpEmail" class="form-control" placeholder="contact@company.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="qpNotes">Additional Scope or Target Launch Date</label>
+            <textarea id="qpNotes" class="form-control" style="min-height: 80px;"
+              placeholder="Optional notes..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 10px;">
+            Send RFP Request
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+
+</html>
